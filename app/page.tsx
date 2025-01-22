@@ -3,8 +3,8 @@ import Header from './components/Header'
 
 const Homepage = () => {
     return (
-        <>
-            <div className='bg-black hero min-h-screen md:bg-[url("/hero-bg.png")] bg-cover bg-center'>
+        <div>
+            <div className='bg-black hero  bg-[url("/hero-bg.png")] md:bg-cover bg-bottom bg-no-repeat bg-contain md:bg-center'>
                 <div className='container max-w-screen-lg mx-auto flex flex-col justify-center h-screen gap-y-16'>
                     <Header />
 
@@ -15,13 +15,14 @@ const Homepage = () => {
                         </div>
                     </div>
                 </div>
-            </div >
-            <div className='font-bold font-nippo text-[15vw] gap-0 leading-[0.8] text-[#1A1A1A]'>
+            </div>
+
+            <div className='font-bold font-nippo text-[15vw] gap-0 leading-[0.8] text-[#1A1A1A] bg-transparent h-56 md:min-h-96'>
                 <span>Unlock</span><br />
                 <span className='right-0 absolute'>Athlete</span>
             </div>
 
-        </>
+        </div>
     )
 }
 

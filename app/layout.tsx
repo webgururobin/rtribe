@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
+import Footer from './components/Footer'
 
 const generalSans = localFont({
   src: [
@@ -51,7 +52,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${generalSans.variable} ${nippo.variable} antialiased bg-black`}>
-        {children}
+        <div className='flex flex-col min-h-screen'>
+          <div className="flex-1">
+            {children}
+          </div>
+          <div>
+            <Footer />
+          </div>
+        </div>
       </body>
     </html>
   )
