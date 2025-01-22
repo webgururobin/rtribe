@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@utilities {
+  .hero {
+    background: url("/hero-bg.png") no-repeat center center/cover;
+  }
+}

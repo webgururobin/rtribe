@@ -8,9 +8,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        general: ["var(--font-general-sans)"],
+        nippo: ["var(--font-nippo)"],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        orange: "#F05A29",
       },
     },
   },
