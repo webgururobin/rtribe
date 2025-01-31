@@ -5,7 +5,7 @@ const Header = () => {
     return (
         <div>
             {/* <Image src="/logo.png" className='aspect-video' width={300} height={20} alt='logo' /> */}
-            <Link href="/" className='space-y-8 flex flex-col'>
+            <Link href="/" className='md:space-y-8 flex flex-col'>
                 <h1 className='font-nippo text-7xl tracking-[12px] text-white'>
                     RTRIBE
                 </h1>

@@ -20,7 +20,6 @@ const Newsletter = () => {
 
             if (result?.success) {
                 toast("You'll be notified soon!")
-
                 setEmail('')
             }
         } catch (error) {
