@@ -5,7 +5,7 @@ import Newsletter from './components/Newsletter'
 const Homepage = () => {
     return (
         <div>
-            <div className='bg-black flex gap-5 max-sm:flex-col-reverse'>
+            <div className='bg-black flex gap-5 max-sm:flex-col-reverse '>
                 <div className='container max-w-screen-lg mx-auto flex flex-col justify-center md:h-screen gap-y-16 px-4 py-8'>
                     <Header />
 
@@ -14,8 +14,8 @@ const Homepage = () => {
                         <Newsletter />
                     </div>
                 </div>
-                <div>
-                    <Image sizes="(min-width: 2020px) 900px, (min-width: 1680px) calc(87.5vw - 850px), (min-width: 880px) calc(22.18vw + 232px), (min-width: 640px) calc(89.55vw - 349px), 100vw" src="/right.png" className='aspect-auto max-sm:h-48 w-auto justify-self-end' width={900} height={1800} alt='logo' />
+                <div className='max-sm:self-end'>
+                    <Image sizes="(min-width: 2020px) 900px, (min-width: 1680px) calc(87.5vw - 850px), (min-width: 880px) calc(22.18vw + 232px), (min-width: 640px) calc(89.55vw - 349px), 100vw" src="/right.png" className='aspect-auto max-sm:h-48 w-auto ' width={900} height={1800} alt='logo' />
                 </div>
             </div>
 
