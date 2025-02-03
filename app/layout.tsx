@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
-import Footer from './components/Footer'
+import Footer from '../components/Footer'
 import { Toaster } from '@/components/ui/sonner'
 
 const generalSans = localFont({
@@ -52,7 +52,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${generalSans.variable} ${nippo.variable} antialiased bg-black`}>
+      <link rel="icon" href="/favicon.png" sizes="any" />
+      <body className={`${generalSans.variable} ${nippo.variable} antialiased bg-[#1E1E1E]`}>
         <div className='flex flex-col min-h-screen'>
           <div className="flex-1">
             {children}

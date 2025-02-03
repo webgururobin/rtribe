@@ -1,0 +1,64 @@
+'use client'
+
+import { Button } from '@/components/ui/button'
+import { Input } from '@/components/ui/input'
+import { handleRegister } from '../app/actions'
+import { useState } from 'react'
+import { toast } from 'sonner'
+import ArrowDark from './ArrowDark'
+
+const Newsletter = () => {
+    const [email, setEmail] = useState<string>('')
+    const [state, setState] = useState<{ success: boolean } | null>(null)
+    const [loading, setLoading] = useState<boolean>(false)
+
+    const formAction = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault()
+        const formData = new FormData(event.currentTarget)
+
+        try {
+            setLoading(true)
+            const result = await handleRegister(state, formData)
+            setState(result)
+
+            if (result?.success) {
+                toast("You'll be notified soon!")
+                setEmail('')
+                setLoading(false)
+            }
+        } catch (error) {
+            console.error('Registration failed:', error)
+            toast.error("Error registering. Please try again.")
+            setLoading(false)
+        }
+    }
+
+    return (
+        <form onSubmit={formAction} className='flex max-w-screen-sm max-sm:flex-col px-2'>
+
+            <div className='flex-1 border-orange border-b-0'>
+                <span className='text-[#F05A28] font-nippo font-light text-center w-full block border-orange border-[1px] border-b-0 text-md p-1'>Be part of the Tribe</span>
+                <Input
+                    className='max-w-full py-6 rounded-none border-orange text-white font-general font-bold'
+                    type="email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    name="email"
+                    required
+                />
+            </div>
+            <Button
+                type='submit'
+                variant='ghost'
+                className='border-0 border-orange font-nippo font-bold text-2xl text-white uppercase bg-none rounded-none py-6 w-fit self-end max-sm:w-full pl-0 bg-orange'
+                disabled={loading}
+            >
+                <ArrowDark />
+                Send
+            </Button>
+        </form>
+    )
+}
+
+export default Newsletter
