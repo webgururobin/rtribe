@@ -51,11 +51,11 @@ const Newsletter = () => {
             <Button
                 type='submit'
                 variant='ghost'
-                className='border-0 border-orange font-nippo font-bold text-2xl text-white uppercase bg-none rounded-none py-6 w-fit self-end max-sm:w-full pl-0 bg-orange'
+                className='border-0 border-orange font-nippo font-bold text-xl md:text-2xl text-white uppercase bg-none rounded-none py-6 w-fit self-end max-sm:w-full pl-0 bg-orange justify-start'
                 disabled={loading}
             >
-                <ArrowDark />
-                Send
+                <ArrowDark className='!size-8' />
+                <span className='flex-1'>Send</span>
             </Button>
         </form>
     )
