@@ -17,7 +17,7 @@ const Footer = () => {
                     <span className='text-orange font-nippo font-lg tracking-[2] uppercase'>Linkedin</span>
                 </a>
             </div>
-            <Link href={'/'} className='text-white font-nippo text-lg'>
+            <Link href={'/'} className='text-white font-nippo text-lg max-sm:self-center'>
                 <span className='text-orange'> &copy;</span> {new Date().getFullYear()} <span className='stroked-copy'>RTRIBE</span>
             </Link>
         </div>
