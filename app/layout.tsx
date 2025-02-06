@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
-import Footer from '../components/Footer'
 import { Toaster } from '@/components/ui/sonner'
 
 const generalSans = localFont({
@@ -59,7 +58,6 @@ export default function RootLayout({
             {children}
           </div>
           <div>
-            <Footer />
             <Toaster />
           </div>
         </div>

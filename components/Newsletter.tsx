@@ -34,12 +34,11 @@ const Newsletter = () => {
     }
 
     return (
-        <form onSubmit={formAction} className='flex max-w-screen-sm max-sm:flex-col px-2'>
-
+        <form onSubmit={formAction} className='flex max-sm:w-full max-w-screen-sm  px-2 z-10 relative'>
             <div className='flex-1 border-orange border-b-0'>
-                <span className='text-[#F05A28] font-nippo font-light text-center w-full block border-orange border-[1px] border-b-0 text-md p-1'>Be part of the Tribe</span>
+                <span className='text-[#F05A28] font-nippo font-normal text-center  block border-orange border-[1px] border-b-0 text-md p-1 uppercase'>Be part of the Tribe</span>
                 <Input
-                    className='max-w-full py-6 rounded-none border-orange text-white font-general font-bold'
+                    className='max-w-full py-6 rounded-none border-orange text-white font-general font-bold bg-[#1E1E1E]'
                     type="email"
                     placeholder="Email"
                     value={email}
@@ -51,7 +50,7 @@ const Newsletter = () => {
             <Button
                 type='submit'
                 variant='ghost'
-                className='border-0 border-orange font-nippo font-bold text-xl md:text-2xl text-white uppercase bg-none rounded-none py-6 w-fit self-end max-sm:w-full pl-0 bg-orange justify-start'
+                className='border-0 border-orange font-nippo font-bold text-xl md:text-2xl text-white uppercase bg-none rounded-none py-6 w-fit self-end pl-0 bg-orange justify-start'
                 disabled={loading}
             >
                 <ArrowDark className='!size-8' />
