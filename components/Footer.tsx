@@ -4,7 +4,7 @@ import Arrow from './Arrow'
 
 const Footer = () => {
     return (
-        <div className='h-48 bg-black py-10 flex justify-between items-center max-sm:flex-col'>
+        <div className='h-48 bg-[#131313] py-10 flex justify-between items-center max-sm:flex-col'>
             <div className="left space-y-4 max-sm:w-full max-sm:flex max-sm:justify-between max-sm:items-end">
                 <a target='_blank' href={"https://www.instagram.com/rtribe.in?igsh=MWdpcG52M2hscXpjdQ%3D%3D&utm_source=qr"} className='flex gap-2 items-center'>
                     <Arrow />
