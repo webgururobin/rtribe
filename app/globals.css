@@ -74,7 +74,7 @@ body {
 
  .stroked-text {
     @apply font-nippo font-normal;
-    color: #1e1e1e;
+    color: transparent;
     text-shadow: -1px -1px 0 #2F2E2E, 1px -1px 0 #2F2E2E, -1px 1px 0 #2F2E2E, 1px 1px 0 #2F2E2E;
   }
 

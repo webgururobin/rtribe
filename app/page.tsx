@@ -23,8 +23,9 @@ const LandingPage = () => {
             </div>
 
             <div className='font-bold font-nippo text-[26vw] md:text-[16vw] gap-0 leading-[0.8] text-transparent  md:-mt-14 md:-mb-20 h-[32vw] block max-sm:relative'>
-                <span className='stroked-text z-0  max-sm:-top-10 max-sm:absolute'>Unlock</span><br />
-                <span className='right-0 stroked-text absolute z-10 bottom-[10rem] max-sm:-bottom-2'>Athlete</span>
+                {/* <span className='stroked-text z-0  max-sm:-top-10 max-sm:absolute'>Unlock</span><br /> */}
+                <Image className='max-sm:-top-10 max-sm:absolute' src="/unlock.png" width={1000} height={220} alt='unlock' />
+                <Image className='absolute z-10 bottom-[10rem] max-sm:-bottom-2 right-0' src="/athlete.png" width={1000} height={220} alt='unlock' />
             </div>
 
             <Footer />
