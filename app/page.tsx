@@ -8,7 +8,7 @@ const LandingPage = () => {
     return (
         <div className='relative min-h-screen overflow-hidden'>
             <Image sizes="(min-width: 2020px) 900px, (min-width: 1680px) calc(87.5vw - 850px), (min-width: 880px) calc(22.18vw + 232px), (min-width: 640px) calc(89.55vw - 349px), 100vw" src="/fox.png" className='
-            absolute md:-right-10 -top-10 -right-20
+            absolute md:-right-10 -top-10 -right-20 max-h-[100vh] w-auto md:w-[55vw] md:h-auto
             ' width={1000} height={1000} alt='fox' />
 
             <div className='h-full bg-[#1E1E1E]'>

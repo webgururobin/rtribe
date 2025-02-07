@@ -36,9 +36,9 @@ const Newsletter = () => {
     return (
         <form onSubmit={formAction} className='flex max-sm:w-full max-w-screen-sm  px-2 z-10 relative'>
             <div className='flex-1 border-orange border-b-0'>
-                <span className='text-[#F05A28] font-nippo font-normal text-left block border-orange border-[1px] border-b-0 text-[20px] uppercase tracking-[2] px-4'>Join the Tribe</span>
+                <span className='text-[#F05A28] font-nippo font-normal text-left block border-orange border-[1px] border-b-0 text-sm md:text-[20px] uppercase tracking-[4] px-4 py-2'>Join the Tribe</span>
                 <Input
-                    className='max-w-full py-6 rounded-none border-orange text-white font-general font-bold bg-[#1E1E1E] !text-2xl px-4'
+                    className='max-w-full py-6 rounded-none border-orange text-white font-general font-bold bg-[#1E1E1E] !text-lg md:!text-2xl px-4'
                     type="email"
                     placeholder="Email"
                     value={email}
