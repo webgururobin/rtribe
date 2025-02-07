@@ -16,7 +16,7 @@ const Footer = () => {
                 </a>
             </div>
             <Link href={'/'} className='text-white font-nippo text-lg max-sm:self-center'>
-                <span className='text-orange'> &copy;</span> {new Date().getFullYear()} <span className='stroked-copy'>RTRIBE</span>
+                <span className='text-orange'> &copy;</span> <span className='stroked-copy'> {new Date().getFullYear()} </span> <span className=''>RTRIBE</span>
             </Link>
         </div>
     )
