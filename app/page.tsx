@@ -16,7 +16,7 @@ const LandingPage = () => {
                     <Header />
 
                     <div className='space-y-4'>
-                        <h1 className='font-general-sans text-5xl md:text-[164px] leading-[1] text-white font-extrabold z-10 relative bg-transparent'>Launching <br />Soon</h1>
+                        <h1 className='font-general-sans text-5xl md:text-[164px] leading-[1] text-white font-extrabold z-10 relative bg-transparent px-2'>Launching <br />Soon</h1>
                         <Newsletter />
                     </div>
                 </div>
