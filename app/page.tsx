@@ -8,7 +8,7 @@ const LandingPage = () => {
     return (
         <div className='relative min-h-screen overflow-hidden'>
             <Image sizes="(min-width: 2020px) 900px, (min-width: 1680px) calc(87.5vw - 850px), (min-width: 880px) calc(22.18vw + 232px), (min-width: 640px) calc(89.55vw - 349px), 100vw" src="/fox.png" className='
-            absolute md:-right-10 -top-10 -right-20 max-h-[100vh] w-auto md:w-[55vw] md:h-auto
+            absolute md:-right-10 -top-10 -right-20 max-h-[100vh] w-auto md:w-[55vw] 2xl:w-[45vw] h-[45%] md:h-auto object-cover
             ' width={1000} height={1000} alt='fox' />
 
             <div className='h-full bg-[#1E1E1E]'>
@@ -16,13 +16,13 @@ const LandingPage = () => {
                     <Header />
 
                     <div className='space-y-4'>
-                        <h1 className='font-general-sans text-5xl md:text-[164px] leading-[1] text-white font-extrabold z-10 relative bg-transparent px-2'>Launching <br />Soon</h1>
+                        <h1 className='font-general-sans text-5xl md:text-[144px] lg:text-[164px] leading-[1] text-white font-extrabold z-10 relative bg-transparent px-2'>Launching <br />Soon</h1>
                         <Newsletter />
                     </div>
                 </div>
             </div>
 
-            <div className='font-bold font-nippo text-[26vw] md:text-[16vw] gap-0 leading-[0.8] text-transparent  md:-mt-14 md:-mb-20 h-[32vw] block max-sm:relative'>
+            <div className='font-bold font-nippo text-[26vw] md:text-[16vw] gap-0 leading-[0.8] text-transparent  md:-mt-14 md:-mb-20 h-[30vw] md:h-[44vw] lg:h-[30vw] 2xl:h-[22vw] block max-sm:relative'>
                 {/* <span className='stroked-text z-0  max-sm:-top-10 max-sm:absolute'>Unlock</span><br /> */}
                 <Image className='max-sm:-top-10 max-sm:absolute' src="/unlock.png" width={1000} height={220} alt='unlock' />
                 <Image className='absolute z-10 bottom-[10rem] max-sm:-bottom-2 right-0' src="/athlete.png" width={1000} height={220} alt='unlock' />
